@@ -1,8 +1,12 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-const app = express();
 const port = 4002;
+const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 //connect mysql
 
@@ -111,6 +115,5 @@ app.get("/getdifffunction", async (req, res) => {
     return res.status(500).send();
   }
 })
-
 
 app.listen(port, () => console.log('server is running at port', port))

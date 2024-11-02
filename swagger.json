@@ -1,0 +1,69 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Swagger Petstore - OpenAPI 3.0",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/getrootfunc": {
+      "get": {
+        "tags": [
+          "Root of Equeation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    },
+    "/getmatrixequeation": {
+      "get": {
+        "tags": [
+          "Linear Equation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    },
+    "/getinterpolationfunc": {
+      "get": {
+        "tags": [
+          "Interpolation & Exterpolation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    },
+    "/getintegreatfunction": {
+      "get": {
+        "tags": [
+          "Integration"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    },
+    "/getdifffunction": {
+      "get": {
+        "tags": [
+          "Differentation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    }
+  }
+}
