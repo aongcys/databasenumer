@@ -46,6 +46,8 @@ app.get("/getrootfunc", async (req, res) => {
   }
 })
 
+// app.get("/getlinearalgebra", async (req, res) => {
+
 app.get("/getmatrixequeation", async (req, res) => {
   try {
     connection.query("SELECT * FROM matrixequeation", (err, result, filelds) => {
