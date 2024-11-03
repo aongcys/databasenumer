@@ -50,6 +50,8 @@ app.get("/getrootfunc", async (req, res) => {
   }
 })
 
+// heloowrrolddd
+
 // app.get("/getlinearalgebra", async (req, res) => {
 
 app.get("/getmatrixequeation", async (req, res) => {
